@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Sony Bravia Remote",
+    "slug": "sony-bravia-remote",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "bravia-remote",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.local.braviaremote"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.local.braviaremote"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "./src/app"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
